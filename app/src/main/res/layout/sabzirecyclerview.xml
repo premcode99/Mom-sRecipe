@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f8dc"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose ingradient"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#f4f8d5"
+            android:textSize="40dp"
+            android:shadowColor="#00ccff"
+            android:shadowRadius="10"
+            android:shadowDx="2"
+            android:textStyle="italic"
+            android:shadowDy="2"
+            android:textColor="#00ccff"
+            android:textColorLink="#8DE67F"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_viewdailydish"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="9"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:src="@drawable/next"
+            android:layout_weight="1"
+            android:id="@+id/imagebuttonnext"
+            android:background="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
